@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Prints Hyderabad - Personalized Mugs, T-Shirts & Gifts</title>
+    <meta name="description" content="Custom printing business in Hyderabad creating personalized mugs, t-shirts, and gifts for every occasion. Quality and creativity at affordable prices.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#F59E0B',
+                        accent: '#10B981'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.6s ease-out;
+        }
+        .slide-in-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.6s ease-out;
+        }
+        .slide-in-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold text-primary">Custom Prints</h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="#products" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Products</a>
+                        <a href="#about" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="#reviews" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Reviews</a>
+                        <a href="#contact" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#products" class="text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Products</a>
+                <a href="#about" class="text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#reviews" class="text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Reviews</a>
+                <a href="#contact" class="text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center">
+        <!-- Background image -->
+        <div class="absolute inset-0">
+            <img src="Images/store/1.png" alt="Custom Prints Store" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8">
+            <div class="fade-in">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
+                    Custom Prints
+                </h1>
+                <p class="text-xl md:text-2xl text-white mb-8 drop-shadow-md max-w-3xl mx-auto">
+                    Custom Prints for Every Occasion
+                </p>
+                <p class="text-lg text-white/90 mb-12 drop-shadow-sm max-w-2xl mx-auto">
+                    Personalized mugs, t-shirts, and gifts that make every moment special
+                </p>
+                <a href="#contact" class="inline-block bg-primary hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+        <!-- Background pattern overlay -->
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-20 left-20 w-32 h-32 bg-primary rounded-full"></div>
+            <div class="absolute top-40 right-32 w-24 h-24 bg-secondary rounded-full"></div>
+            <div class="absolute bottom-32 left-1/3 w-28 h-28 bg-accent rounded-full"></div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="fade-in">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Products</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Discover our range of personalized products perfect for any occasion
+                    </p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Mugs -->
+                <div class="fade-in group">
+                    <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="w-24 h-24 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-mug-hot text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Custom Mugs</h3>
+                        <p class="text-gray-600 mb-6">
+                            Personalized mugs with your favorite photos, quotes, or designs. Perfect for coffee lovers and gift-giving.
+                        </p>
+                        <div class="space-y-2 text-sm text-gray-500">
+                            <p>• High-quality ceramic</p>
+                            <p>• Dishwasher safe</p>
+                            <p>• Fast turnaround</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- T-Shirts -->
+                <div class="fade-in group">
+                    <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="w-24 h-24 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-tshirt text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Custom T-Shirts</h3>
+                        <p class="text-gray-600 mb-6">
+                            Express yourself with custom t-shirts featuring your designs, logos, or personal messages.
+                        </p>
+                        <div class="space-y-2 text-sm text-gray-500">
+                            <p>• Premium cotton fabric</p>
+                            <p>• Long-lasting prints</p>
+                            <p>• All sizes available</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gifts -->
+                <div class="fade-in group">
+                    <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="w-24 h-24 bg-accent rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-gift text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Personalized Gifts</h3>
+                        <p class="text-gray-600 mb-6">
+                            Unique gift items including phone cases, keychains, and more with your custom designs.
+                        </p>
+                        <div class="space-y-2 text-sm text-gray-500">
+                            <p>• Wide variety of items</p>
+                            <p>• Perfect for gifting</p>
+                            <p>• Bulk order discounts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="slide-in-left">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About Us</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        We are a Hyderabad-based custom printing business creating personalized mugs, t-shirts, and gifts for every occasion. From birthdays to corporate events, we deliver quality and creativity at affordable prices.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-gray-700">Fast turnaround times</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-gray-700">Premium quality materials</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-gray-700">Competitive pricing</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-gray-700">Local Hyderabad service</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-in-right">
+                    <div class="bg-gradient-to-br from-primary to-blue-600 rounded-2xl p-8 text-white">
+                        <h3 class="text-2xl font-bold mb-6">Why Choose Us?</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-shipping-fast text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-2">Quick Delivery</h4>
+                                    <p class="text-white/80">Fast processing and delivery across Hyderabad</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-palette text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-2">Custom Designs</h4>
+                                    <p class="text-white/80">We help bring your ideas to life with professional design support</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-heart text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-2">Quality Guarantee</h4>
+                                    <p class="text-white/80">We stand behind our products with quality assurance</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="fade-in">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Our Customers Say</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Don't just take our word for it - hear from our satisfied customers across Hyderabad
+                    </p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Review 1 - Anjali R. -->
+                <div class="fade-in">
+                    <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-bold text-lg">AR</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Anjali R.</h4>
+                                <div class="flex items-center mt-1">
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            "Ordered custom mugs for my friend's birthday – amazing quality and fast delivery! The printing was perfect and the mugs are dishwasher safe. Highly recommend!"
+                        </p>
+                        <div class="mt-4">
+                            <img src="Images/Anjali R./1.jpeg" alt="Anjali's custom mugs" class="w-full h-48 object-cover rounded-lg shadow-md" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <div class="hidden w-full h-48 bg-gray-100 rounded-lg flex items-center justify-center text-gray-500 text-sm">
+                                <span>Image not available</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 - Rakesh K. -->
+                <div class="fade-in">
+                    <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-bold text-lg">RK</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Rakesh K.</h4>
+                                <div class="flex items-center mt-1">
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            "The t-shirts were perfect for our team event. Everyone loved the design and the fabric quality is excellent. Will definitely order again for future events!"
+                        </p>
+                        <div class="mt-4">
+                            <img src="Images/Rakesh K./1.jpeg" alt="Rakesh's team t-shirts" class="w-full h-48 object-cover rounded-lg shadow-md" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <div class="hidden w-full h-48 bg-gray-100 rounded-lg flex items-center justify-center text-gray-500 text-sm">
+                                <span>Image not available</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 - Priya S. -->
+                <div class="fade-in">
+                    <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-bold text-lg">PS</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Priya S.</h4>
+                                <div class="flex items-center mt-1">
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            "Great service and very affordable. The personalized gifts I ordered for my family were beautiful and delivered on time. Will definitely order again!"
+                        </p>
+                        <div class="mt-4">
+                            <img src="Images/Priya S./1.jpeg" alt="Priya's personalized gifts" class="w-full h-48 object-cover rounded-lg shadow-md" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <div class="hidden w-full h-48 bg-gray-100 rounded-lg flex items-center justify-center text-gray-500 text-sm">
+                                <span>Image not available</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="fade-in">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Ready to create something special? Contact us for a quote or to discuss your custom printing needs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="fade-in">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300" placeholder="Tell us about your custom printing needs..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="fade-in">
+                    <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                                                         <div class="flex items-center">
+                                 <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+                                     <i class="fas fa-map-marker-alt text-white"></i>
+                                 </div>
+                                 <div>
+                                     <h4 class="font-semibold text-gray-900">Location</h4>
+                                     <p class="text-gray-600">Plot:45, Flat:401, Sai Residency, Srinivasa Nagar, Nizampet, Hyderabad</p>
+                                 </div>
+                             </div>
+                             <div class="flex items-center">
+                                 <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
+                                     <i class="fab fa-whatsapp text-white text-xl"></i>
+                                 </div>
+                                 <div>
+                                     <h4 class="font-semibold text-gray-900">WhatsApp</h4>
+                                     <a href="https://wa.me/919032757482" class="text-primary hover:text-blue-700 transition-colors">+91 90327 57482</a>
+                                 </div>
+                             </div>
+                             <div class="flex items-center">
+                                 <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4">
+                                     <i class="fas fa-phone text-white"></i>
+                                 </div>
+                                 <div>
+                                     <h4 class="font-semibold text-gray-900">Phone</h4>
+                                     <a href="tel:+919032757482" class="text-primary hover:text-blue-700 transition-colors">+91 90327 57482</a>
+                                 </div>
+                             </div>
+                             <div class="flex items-center">
+                                 <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mr-4">
+                                     <i class="fas fa-envelope text-white"></i>
+                                 </div>
+                                 <div>
+                                     <h4 class="font-semibold text-gray-900">Email</h4>
+                                     <a href="mailto:srikaramdesigners@gmail.com" class="text-primary hover:text-blue-700 transition-colors">srikaramdesigners@gmail.com</a>
+                                 </div>
+                             </div>
+                        </div>
+                        
+                        <div class="mt-8 pt-6 border-t border-gray-200">
+                            <h4 class="font-semibold text-gray-900 mb-4">Business Hours</h4>
+                            <div class="space-y-2 text-gray-600">
+                                <p>Monday - Friday: 9:00 AM - 7:00 PM</p>
+                                <p>Saturday: 10:00 AM - 6:00 PM</p>
+                                <p>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-2xl font-bold mb-4">Custom Prints</h3>
+                    <p class="text-gray-300 mb-6 max-w-md">
+                        Your trusted partner for personalized printing solutions in Hyderabad. Quality, creativity, and customer satisfaction guaranteed.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                                                 <a href="https://wa.me/919032757482" class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
+                             <i class="fab fa-whatsapp"></i>
+                         </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#products" class="text-gray-300 hover:text-white transition-colors">Products</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-white transition-colors">About</a></li>
+                        <li><a href="#reviews" class="text-gray-300 hover:text-white transition-colors">Reviews</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Custom Mugs</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">T-Shirt Printing</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Personalized Gifts</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Bulk Orders</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2024 Custom Prints Hyderabad. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
